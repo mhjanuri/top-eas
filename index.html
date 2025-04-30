@@ -10,15 +10,34 @@
 <body>
 
     <div class="sketch-pad">
-        <div class="sketch-container">
-            <div class="container">
-        
-            </div>
+
+        <div class="title">
+            <!-- <h3 id="title1">Magic</h3> -->
+            <h1 id="title2">Etch A Sketch</h1>
+            <!-- <h3 id="title3">Screen</h3> -->
         </div>
+    
+        <div class="sketch-container">
+            <div class="container"></div>
+        </div>
+    
+        <div class="buttons">
+            <button class="colorBtn" onclick="changeColor('black')">Black</button>
+            <!-- <button class="colorBtn" onclick="changeColor('gray')">Gray</button> -->
+            <button class="colorBtn" onclick="changeColor('random')">Random</button>
+            <button class="colorBtn" onclick="changeColor('#e0e0e0')">Erase</button>
+            <button class="colorBtn" onclick="resetContainer()">Reset</button>
+        </div>
+
+        <!-- <div class="resize">
+            <input class="range-slider" onchange="changeSize(this.value)" type="range" min="1" max="100" step="1" value="16">
+            <label for="">Resize Grid</label>
+        </div> -->
+
     </div>
 
     <footer>
-        <p>Design by 2023</p>
+        <a class="footer-link" href="https://github.com/mhjanuri/top-eas" target="_blank" >Source</a>
     </footer>
 
 </body>
